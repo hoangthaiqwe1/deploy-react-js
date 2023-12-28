@@ -124,7 +124,7 @@ function BaseComponent() {
         {/* Navbar menu */}
         <div className="navbar justify-content-around p-3 ">
           <div className="logo">
-            <Link to={"/"} style={{ textDecoration: "none" }}>
+            <Link to={"/deploy-react-js/"} style={{ textDecoration: "none" }}>
               <img
                 src="https://mauweb.monamedia.net/rolex/wp-content/uploads/2018/12/logo.png"
                 alt="Đồng Hồ Hải Triều"
