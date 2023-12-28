@@ -5,6 +5,17 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 img {
   width: 100%;
   display: block;
@@ -204,12 +215,12 @@ li {
 .infor-cart h3 {
   text-align: center;
 }
-.modalpayment{
+.modalpayment {
   display: block;
   background-color: #77684e;
 }
 
-.thanks{
+.thanks {
   font-size: 20px;
 }
 .ordersuccess {
@@ -217,7 +228,7 @@ li {
   color: rgb(67, 225, 55);
 }
 
-.order{
+.order {
   background-color: #ccc8c87e;
   padding: 15px;
   border-radius: 15px;
@@ -228,58 +239,58 @@ li {
   font-size: 20px;
 }
 
-.ship{
+.ship {
   color: red;
 }
-.priceorder{
+.priceorder {
   color: red;
 }
-.productorder{
+.productorder {
   display: flex;
 }
 
-.imgorder{
+.imgorder {
   width: 100px;
   height: 100px;
 }
-.imgorder img{
+.imgorder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.contentorder p{
+.contentorder p {
   margin: 3px 0;
   font-size: 18px;
 }
 
-.productBuyOrder{
+.productBuyOrder {
   margin-top: 15px;
   color: #4c4949;
   font-weight: bold;
 }
-.modal-footer{
+.modal-footer {
   display: block;
 }
-.modal-footer .buttonOrder{
-width: 100%;
-padding: 10px;
-font-size: 18px;
-background-color:#ccc8c87e ;
-border: none;
-color: #00000087;
-transition: 0.5s;
+.modal-footer .buttonOrder {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ccc8c87e;
+  border: none;
+  color: #00000087;
+  transition: 0.5s;
 }
 
-.modal-footer .buttonOrder:hover{
-  background-color:#bda478;
+.modal-footer .buttonOrder:hover {
+  background-color: #bda478;
 }
 
 @media (max-width: 700px) {
   .content-cart p {
     font-size: 17px;
   }
-  .thanks{
+  .thanks {
     font-size: 19px;
   }
 }
@@ -311,26 +322,26 @@ transition: 0.5s;
     font-size: 10px;
     margin-top: 5px;
   }
-  .thanks{
+  .thanks {
     font-size: 17px;
   }
   .order h3 {
     font-size: 18px;
-   }
+  }
   .order p {
     font-size: 18px;
   }
-  .contentorder p{
+  .contentorder p {
     font-size: 18px;
     margin-left: 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .contentorder p{
+  .contentorder p {
     font-size: 17px;
   }
-  .productBuyOrder{
+  .productBuyOrder {
     font-size: 20px;
   }
 }
@@ -340,17 +351,17 @@ transition: 0.5s;
     font-size: 13px;
     margin-bottom: 3px;
   }
-  .contentorder p{
+  .contentorder p {
     font-size: 15px;
   }
 
-   .order h3 {
+  .order h3 {
     font-size: 17px;
-   }
+  }
   .order p {
     font-size: 16px;
   }
-  .ordersuccess{
+  .ordersuccess {
     font-size: 17px;
   }
 }
