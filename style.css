@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 img {
@@ -464,13 +471,14 @@ li {
   max-height: 600px; /* Chiều cao cố định */
   overflow: auto;
   border: 1px solid #00000091;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .Card-search::-webkit-scrollbar {
   width: 0; /* Ẩn thanh cuộn trên trình duyệt WebKit */
 }
 
-.search-item-product{
+.search-item-product {
   display: flex;
   align-items: center;
   background-color: #cccccc86;
@@ -478,24 +486,24 @@ li {
   padding: 7px 10px;
 }
 
-.search1{
+.search1 {
   background-color: #fff;
   outline: none;
   box-shadow: none !important;
   border: none;
 }
-.search-product{
+.search-product {
   position: relative;
   z-index: 1;
 }
 
-.background-search{
-  background-color: rgba(23, 23, 23, 0.5)!important;
+.background-search {
+  background-color: rgba(23, 23, 23, 0.5) !important;
   top: 0px;
   left: 0;
   width: 100vw;
   height: 100vh !important;
-  position:fixed; 
+  position: fixed;
   z-index: 1000;
 }
 
@@ -582,7 +590,7 @@ li {
   .sign-in {
     display: none;
   }
-  .search-item-product{
+  .search-item-product {
     display: none;
   }
 }
@@ -607,16 +615,15 @@ li {
     font-size: 15px;
   }
   .Card-search {
-  top: 182px;
-  
-  
-  border-radius: 0px;
-}
-.Card-search {
-  width: 90%;
-  right: 50%;
-  transform: translateX(50%);
-}
+    top: 182px;
+
+    border-radius: 0px;
+  }
+  .Card-search {
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -707,8 +714,8 @@ li {
     height: 90px;
   }
   .Card-search {
-  top: 170px;
-}
+    top: 170px;
+  }
 }
 
 @media (max-width: 456px) {
@@ -758,8 +765,8 @@ li {
     font-size: 15px;
   }
   .Card-search {
-  top: 220px;
-}
+    top: 220px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -834,7 +841,7 @@ li {
   .tittle-register {
     font-size: 19px !important;
   }
-    .Card-search {
-  top: 210px;
-}
+  .Card-search {
+    top: 210px;
+  }
 }
