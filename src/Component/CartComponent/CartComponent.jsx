@@ -17,7 +17,7 @@ function CartComponent() {
   const [order, setorder] = useState(false);
   const navigate = useNavigate();
   const redirectHome = () => {
-    navigate("/");
+    navigate("/deploy-react-js/");
   };
   useEffect(() => {
     const newTotalPrice = history.reduce(
@@ -149,7 +149,7 @@ function CartComponent() {
     }
   };
   const handlebuyproduct = () => {
-    navigate("/product");
+    navigate("/deploy-react-js/product");
     setorder(false);
     setcartuser([]);
   };

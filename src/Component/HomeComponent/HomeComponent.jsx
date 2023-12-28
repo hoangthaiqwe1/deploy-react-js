@@ -12,7 +12,7 @@ function HomeComponent() {
   const { Dataproduct} = useContext(Context);
   const navigate = useNavigate();
   const redirectAboutUS = () => {
-    navigate("/product");
+    navigate("/deploy-react-js/product");
   };
   useEffect(() => {
     document.title = "Home watches";

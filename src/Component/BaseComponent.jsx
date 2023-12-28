@@ -137,22 +137,31 @@ function BaseComponent() {
             }`}
           >
             <li className="menunavbar">
-              <Link to={"/"} style={{ textDecoration: "none" }}>
+              <Link to={"/deploy-react-js/"} style={{ textDecoration: "none" }}>
                 TRANG CHỦ
               </Link>
             </li>
             <li className="menunavbar">
-              <Link to={"/introduce"} style={{ textDecoration: "none" }}>
+              <Link
+                to={"/deploy-react-js/introduce"}
+                style={{ textDecoration: "none" }}
+              >
                 GIỚI THIỆU
               </Link>
             </li>
             <li className="menunavbar">
-              <Link to={"/product"} style={{ textDecoration: "none" }}>
+              <Link
+                to={"/deploy-react-js/product"}
+                style={{ textDecoration: "none" }}
+              >
                 SẢN PHẨM
               </Link>
             </li>
             <li className="menunavbar">
-              <Link to={"/contact"} style={{ textDecoration: "none" }}>
+              <Link
+                to={"/deploy-react-js/contact"}
+                style={{ textDecoration: "none" }}
+              >
                 LIÊN HỆ
               </Link>
             </li>
@@ -161,7 +170,7 @@ function BaseComponent() {
             <i className="fa-solid fa-bars" onClick={handleNavbarToggle}></i>
             <button className="booking">
               <Link
-                to={"/cart"}
+                to={"/deploy-react-js/cart"}
                 style={{
                   textDecoration: "none",
                   color: "#000",

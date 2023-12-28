@@ -12,7 +12,9 @@ ItemComponent.propTypes={
 function ItemComponent({value}) {
     const detailproduct = useNavigate();
     const handledetail = (value) => {
-      detailproduct("/detail/" + value.id,{state:{product:value}});
+      detailproduct("/deploy-react-js/detail/" + value.id, {
+        state: { product: value },
+      });
     };
     const formatCurrency = (amount) => {
       const formattedAmount = amount.toLocaleString("vi-VN", {
