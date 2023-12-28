@@ -486,7 +486,7 @@ li {
 }
 .search-product{
   position: relative;
-  z-index: 1001;
+  z-index: 1;
 }
 
 .background-search{
@@ -742,6 +742,8 @@ li {
     width: 170px;
     display: inline-block !important;
     top: 200px;
+    position: absolute;
+    z-index: 2001;
   }
   .subnavbar .menunavbar,
   .sign-in a {
