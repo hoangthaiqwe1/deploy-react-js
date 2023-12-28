@@ -79,7 +79,7 @@ function CartComponent() {
       toast.error("Tên không hợp lệ, vui lòng kiểm tra lại", {
         position: toast.POSITION.TOP_CENTER,
       });
-    } else if (!customerPhone.match(/^(0|\+84)[3|5|7}8|9][1-9]\d{7}$/)) {
+    } else if (!customerPhone.match(/^(0|\+84)[3|5|7}8|9][0-9]\d{7}$/)) {
       toast.error("Số điện thoại không hợp lệ, vui lòng kiểm tra lại", {
         position: toast.POSITION.TOP_CENTER,
       });
@@ -228,7 +228,7 @@ function CartComponent() {
                   placeholder="Tên Khách Hàng"
                 />
                 <input
-                  type="text"
+                  type="number"
                   onChange={(e) => setCustomerPhone(e.target.value)}
                   id="phonevalue"
                   placeholder="Số điện thoại"
@@ -249,7 +249,7 @@ function CartComponent() {
               <input
                 type="text"
                 onChange={(e) => setCustomerAddress(e.target.value)}
-                placeholder="Số nhà - Tên đường - Thường/Xã"
+                placeholder="Số nhà - Tên đường - Phường/Xã"
                 id="addressvalue"
               />
               <h5>Tỉnh/Thành Phố *</h5>
