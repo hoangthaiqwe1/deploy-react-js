@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+.introduce,.content-introduce{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-introduce > h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.title-introduce > p {
+    font-size: 18px;
+    color: #676767;
+}
+

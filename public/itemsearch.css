@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-search img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.image-search {
+    width: 100px;
+    height: 100px;
+}
+
+.content-search h6{
+    font-size: 15px !important;
+}
+
