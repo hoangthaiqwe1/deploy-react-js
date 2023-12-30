@@ -5,7 +5,6 @@ import HomeComponent from "./Component/HomeComponent/HomeComponent";
 import IntroduComponent from "./Component/IntroduComponent/IntroduComponent";
 import ProductComponent from "./Component/ProductComponent/ProductComponent";
 import ContactComponent from "./Component/ContactComponent/ContactComponent";
-import NotFoundComponent from "./Component/NotFoundComponent/NotFoundComponent";
 import DetailComponent from "./Component/DetailComponent/DetailComponent";
 import AppContext from "./utils/AppContext";
 import CartComponent from "./Component/CartComponent/CartComponent";
@@ -37,7 +36,6 @@ function App() {
               element={<DetailComponent />}
             />
             <Route path="/deploy-react-js/cart" element={<CartComponent />} />
-            <Route path="*" element={<NotFoundComponent />} />
           </Route>
         </Routes>
       </AppContext>
