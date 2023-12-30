@@ -51,31 +51,42 @@ function BaseComponent() {
   };
   const handleMail = (e) => {
     e.preventDefault();
-    if (regiterinformail == "") {
-      toast.error("Vui lòng điền đầy đủ thông tin", {
-        position: toast.POSITION.TOP_CENTER,
-      });
-    } else if (
-      !regiterinformail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
-    ) {
-      toast.error("Email không hợp lệ, vui lòng kiểm tra lại", {
-        position: toast.POSITION.TOP_CENTER,
-      });
-    } else {
-      if (gmailinfor.some((user) => user.name == regiterinformail)) {
-        toast.error("Email đã được đăng ký", {
+    const checkgamil = gmailinfor.some(
+      (item) => item.gmail == regiterinformail
+    );
+    if (!checkgamil) {
+      if (regiterinformail == "") {
+        toast.error("Vui lòng điền thông tin", {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      } else if (
+        !regiterinformail.match(
+          /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+        )
+      ) {
+        toast.error("Email không hợp lệ, vui lòng kiểm tra lại", {
           position: toast.POSITION.TOP_CENTER,
         });
       } else {
-        const userinfor = {
-          name: regiterinformail,
-        };
-        setgmailinfor((curent) => [...curent, userinfor]);
-        toast.success("Email đăng ký nhận thông tin thành công", {
-          position: toast.POSITION.TOP_CENTER,
-        });
-        document.querySelector("#email").value = "";
+        if (gmailinfor.some((user) => user.name == regiterinformail)) {
+          toast.error("Email đã được đăng ký", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        } else {
+          const userinfor = {
+            gmail: regiterinformail,
+          };
+          setgmailinfor((curent) => [...curent, userinfor]);
+          toast.success("Email đăng ký nhận thông tin thành công", {
+            position: toast.POSITION.TOP_CENTER,
+          });
+          document.querySelector("#email").value = "";
+        }
       }
+    } else {
+      toast.error("Email đã được đăng ký nhận thông tin", {
+        position: toast.POSITION.TOP_CENTER,
+      });
     }
   };
   useEffect(() => {
@@ -84,7 +95,7 @@ function BaseComponent() {
         cardSearchRef.current &&
         !cardSearchRef.current.contains(event.target)
       ) {
-       setSearch("");
+        setSearch("");
       }
     };
 
@@ -92,7 +103,7 @@ function BaseComponent() {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []); 
+  }, []);
   return (
     <>
       {/* Contact support */}
