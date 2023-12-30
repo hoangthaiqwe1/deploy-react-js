@@ -8,7 +8,7 @@ ItemSearchComponent.propTypes = {
 function ItemSearchComponent({value,searchDetail}) {
      const detailproduct = useNavigate();
      const handledetail = (value) => {
-       detailproduct("/deploy-react-js/detail/" + value.id, {
+       detailproduct("/deploy-react-js/detail/" + value.id_product, {
          state: { product: value },
        });
        searchDetail("")

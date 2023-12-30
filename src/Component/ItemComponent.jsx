@@ -12,7 +12,7 @@ ItemComponent.propTypes={
 function ItemComponent({value}) {
     const detailproduct = useNavigate();
     const handledetail = (value) => {
-      detailproduct("/deploy-react-js/detail/" + value.id, {
+      detailproduct("/deploy-react-js/detail/" + value.id_product, {
         state: { product: value },
       });
     };
